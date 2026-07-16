@@ -601,7 +601,7 @@ nav {
             justify-content: space-between;
 
             .five_card {
-                width: 500px;   
+                width: 500px;
                 background-color: white;
                 padding: 20px;
 
@@ -620,3 +620,57 @@ nav {
     }
 }
 
+footer {
+    .container {
+        padding: 50px 0px;
+        border-top: 1px solid #272343;
+
+        .footer_box {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .footer_card {
+                width: 300px;
+
+                h1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 0px;
+                }
+            }
+
+            ul {
+                line-height: 30px;
+
+                input {
+                    padding: 10px 20px;
+                    background-color: white;
+                    border: 1px solid #029FAE;
+                    outline: none;
+
+                }
+
+                button {
+                    padding: 10px 20px;
+                    background-color: #029FAE;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                li {
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: #029FAE;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

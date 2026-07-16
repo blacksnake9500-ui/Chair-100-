@@ -524,4 +524,44 @@ nav .nav_bottom .container .bottom_link li:hover::after {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+footer .container {
+  padding: 50px 0px;
+  border-top: 1px solid #272343;
+}
+footer .container .footer_box {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .container .footer_box .footer_card {
+  width: 300px;
+}
+footer .container .footer_box .footer_card h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+footer .container .footer_box ul {
+  line-height: 30px;
+}
+footer .container .footer_box ul input {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #029FAE;
+  outline: none;
+}
+footer .container .footer_box ul button {
+  padding: 10px 20px;
+  background-color: #029FAE;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+footer .container .footer_box ul li:hover {
+  text-decoration: underline;
+  color: #029FAE;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
