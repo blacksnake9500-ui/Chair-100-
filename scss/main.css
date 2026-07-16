@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -34,6 +36,10 @@ button:hover {
 }
 button:active {
   transform: scale(0.9);
+}
+
+::-webkit-scrollbar {
+  color: white;
 }
 
 nav {
@@ -221,9 +227,301 @@ nav .nav_bottom .container .bottom_link li:hover::after {
     transform: translateY(50px);
   }
   75% {
-    transform: translate(35px);
+    transform: translate(20px);
   }
   100% {
     transform: translate(0px);
   }
+}
+
+.intro .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.two .container {
+  padding: 50px 0px;
+}
+.two .container .two_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.two .container .two_title .arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.two .container .two_title .arrows i {
+  width: 50px;
+  height: 50px;
+  background-color: #98b5d3;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.two .container .two_title .arrows i:hover {
+  background-color: #029FAE;
+}
+.two .container .two_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 0px;
+}
+.two .container .two_box .two_card {
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+.two .container .two_box .two_card:hover .two_like {
+  transform: scale(1);
+}
+.two .container .two_box .two_card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.two .container .two_box .two_card .two_p {
+  color: #029FAE;
+  padding: 10px 0px;
+}
+.two .container .two_box .two_card .two_like {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.555);
+  color: red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transform: scale(0);
+}
+.two .container .two_box .two_card .category {
+  width: 50px;
+  text-align: center;
+  color: white;
+}
+.two .container .two_box .two_card .category p {
+  background-color: #01AD5A;
+  top: 20px;
+  left: 20px;
+  padding: 4px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.three .container {
+  padding: 50px 0px;
+}
+.three .container .three_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three .container .three_title .arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.three .container .three_title .arrows i {
+  width: 50px;
+  height: 50px;
+  background-color: #98b5d3;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.three .container .three_title .arrows i:hover {
+  background-color: #029FAE;
+}
+.three .container .three_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0px;
+}
+.three .container .three_box .three_card {
+  width: 300px;
+  position: relative;
+  overflow-y: hidden;
+  transition: all 3s ease;
+  cursor: pointer;
+}
+.three .container .three_box .three_card:hover .three_info {
+  transform: translateY(0px);
+}
+.three .container .three_box .three_card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.three .container .three_box .three_card .three_info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.836);
+  width: 100%;
+  bottom: 3px;
+  padding: 5px;
+  color: white;
+  transform: translateY(70px);
+  transition: all 0.3s ease;
+}
+
+.four .container {
+  padding: 50px 0px;
+}
+.four .container .four_title {
+  padding: 30px 0px;
+}
+.four .container .four_title h1 {
+  text-align: center;
+}
+.four .container .four_title .four_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.four .container .four_title .four_link li {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.four .container .four_title .four_link li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #01AD5A;
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.four .container .four_title .four_link li:hover::after {
+  width: 100%;
+}
+.four .container .four_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.four .container .four_box .four_card {
+  width: 250px;
+  position: relative;
+  cursor: pointer;
+}
+.four .container .four_box .four_card:hover .two_like {
+  transform: scale(1);
+}
+.four .container .four_box .four_card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.four .container .four_box .four_card .two_p {
+  color: #029FAE;
+  padding: 10px 0px;
+}
+.four .container .four_box .four_card .two_like {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.555);
+  color: red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transform: scale(0);
+}
+.four .container .four_box .four_card .category {
+  width: 50px;
+  text-align: center;
+  color: white;
+}
+.four .container .four_box .four_card .category p {
+  background-color: #01AD5A;
+  top: 20px;
+  left: 20px;
+  padding: 4px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.five {
+  background-color: #F0F2F3;
+}
+.five .container {
+  padding: 50px 0px;
+}
+.five .container .five_title {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.five .container .five_title .arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.five .container .five_title .arrows i {
+  width: 50px;
+  height: 50px;
+  background-color: #98b5d3;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.five .container .five_title .arrows i:hover {
+  background-color: #029FAE;
+}
+.five .container .five_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.five .container .five_box .five_card {
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+}
+.five .container .five_box .five_card p {
+  border-left: 2px solid #01AD5A;
+  padding-left: 10px;
+}
+.five .container .five_box .five_card .profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
